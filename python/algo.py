@@ -12,6 +12,7 @@ def swap(array, x, y):
     array[x] = array[y]
     array[y] = temp
 
+#O(n^2)
 def selectionSort(array):
     n = len(array)
     for i in range(n):
@@ -21,7 +22,8 @@ def selectionSort(array):
                 min = j
         swap(array, i, min)
 
-
+#O(n^2) 
+#O(n) when the list is almost sequential
 def insertSort(array):
     n = len(array)
     for i in range(1, n):
